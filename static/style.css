@@ -1,0 +1,166 @@
+/*
+https://colorhunt.co/palette/12372a436850adbc9ffbfada
+https://colorhunt.co/palette/2650732d95969ad0c2f1fada
+https://colorhunt.co/palette/9b4444c68484a3c9aaeeeeee
+ */
+:root {
+    --background-app-color: #FBFADA;
+    --font-color: #12372A;
+    --header-color: #436850;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font-color);
+}
+
+html {
+    font-size: 14px;
+}
+
+body { 
+    font-family: Helvetica, Arial, sans-serif; 
+    background-color: var(--background-app-color); 
+}
+
+header {
+    /*position: fixed;*/
+    width: 100%;
+    top: 0;
+    height: 4rem; 
+}
+
+main {
+    margin-left: 1em;
+    margin-right: 1em;
+    top: 6rem;
+}
+
+h2 { 
+    font-size: 2rem; 
+    height: 3rem;
+    padding-top: 0.5rem;
+    margin: 0; 
+    background-color: var(--header-color);
+    color: var(--background-app-color);
+    text-align: center;
+}
+
+label {
+    font-size: 1rem;
+    font-style: italic;
+
+}
+input, select, button, textarea {
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+
+}
+
+input, select, textarea {
+    border: none;
+}
+
+input, select, button {
+    height: 2rem;    
+}
+
+textarea {
+    height: 4rem;    
+    width: 100%;
+}
+
+input.search {
+    height: 4rem;
+    width: 10rem;
+    margin-right: 1rem;
+}
+
+button.search {
+    height: 4rem;
+    background-color: #265073;
+    color: var(--background-app-color); 
+}
+
+button {
+    width: 12rem;
+    text-align: center;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+button.localizado {
+    background-color: #265073;
+    color: var(--background-app-color); 
+}
+
+button.cancelar {
+    background-color: #9B4444;
+    color: var(--background-app-color); 
+}
+
+#dlg {
+    margin-top: 1rem;
+
+}
+
+.erro {
+    color: #9B4444;
+    font-size: 1.5rem;
+}
+
+.botoes {
+/*    border: 1px solid blue;*/
+}
+
+.secoes li, .bens li {
+    border: 1px solid #A3C9AA;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.secoes li > a > span, .bens li > a > span{
+    flex: 1;
+    display: block;
+    font-weight: bold;
+}
+
+.secoes li a div.resumo, .bens li a div.resumo{
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+li.completo {
+    border: 5px solid #A3C9AA;
+}
+
+button.toolbutton {
+    width: 8rem;
+    text-align: center;
+    height: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+	font-size: 12px;
+    }
+    label {
+    }
+    body {
+    }
+}      

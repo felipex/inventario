@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+      <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Inventário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    
+  </head>
+  <body>
+  <header>
+      <h2>Inventário 2023- UFCA</h2>
+      <div id='secao'><label>Usuário: </label><strong id='usuario'></strong></div>
+  </header>
+  <main>
+  <div id='dlg'>Início</div>
+  
+	<script src="{{ url_for('static', filename='index.js') }}" type="module"  >
+	</script>
+	
+  </main>
+  </body>
+</html>
